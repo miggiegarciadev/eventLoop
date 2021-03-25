@@ -1,11 +1,15 @@
+https://www.youtube.com/watch?v=8aGhZQkoFbQ
+
 heap: memory allocation happens 
-call stack: where stack frames 
-v8 - setTimeOut and HTTP  Request do not exist in it 
-Javascript is singlethreaded meaning, it has one call stack and only do 1 thing at at ime. 
-Call stack is a data structure which records where in the program we are, push stuff at the top and pop off at the top. 
+call stack: where stack frames are 
+V8 - setTimeOut and HTTP Request do not exist in it 
+Javascript is singlethreaded meaning, it has one call stack and can only do 1 thing at at time. 
+Call stack is a data structure which records where in the program we are on: push stuff at the top and pop off at the top. 
 What happens when things are slow? (questions that need answers) 
 Blocking is just when it is going slow.
 running code in browsers can be a problem so we do asynchrous call backs to solve it  
 while loop is synchronous
-oncurrency and the Event Loop = one thing at a time except not really
+concurrency and the Event Loop = one thing at a time except not really except not really 
+the Event Loop's job is to look at the stack queue, if the stack is empty it takes the first thing in the queue and pushes it on to the stack so it affectively must run it
+the browser is more than just run time 
 
