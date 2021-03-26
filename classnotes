@@ -1,0 +1,87 @@
+synchronous = waiting/blocking (one process @ a time) 
+aynchronous = moving on to the next/not blocking 
+
+JavaScript is synchronous by nature/single threaded 
+- it cannot be multithreaded and this is not supported 
+
+concurrently means at the same time 
+
+The environement in which we are running Javascript (the browser) 
+- JS isrunning in the browser -> so we get a bunch of goodies in the browser
+- like having a bunch of APIS (we can use async) 
+- for API normally it does not have access to it
+*common browser API - DOM (DOcument Object Model) API (or XML) dociument - usually using Javascript
+(the DOM has nothing to do with Javascript)
+*most of the stuff you think is Javascript is not! For example:  document.queryselector (this is a web API and JS has access to it)
+  - each browser manufacturer needs to ship the DOM 
+  
+ES6 is the Council that sets the rules in play
+
+Callbacks, promises, and async/await
+
+Javascript can do a lot of blocking stuffing in the browser because it is handing that stuff off to asynch web API's -> JS delegates task to the browser 
+- hands off request (call stack) 
+
+setTimeout() = not javascript 
+setInterval() = not javascript 
+** most browsers include these API's
+
+The eventloop is being handled by the asynchronous  loop and not Javascript so the time is being sent through the loop 
+- event loop runs, checks andthen occurs to updating in the DOM 
+
+callbacks - old school way -> the function that has been pass an arguement inthe higher order function 
+the eventlistener is an ex of High order function 
+
+promises are being consumed
+
+Javascript is not natively in the DOM but in sandbox (<= environment) 
+Javascript does what the hosting environement gives it access to like the server serves
+
+node.js is the hosting environment 
+- as JS runtime built on Chrome'sV8 JS engine
+- node comes with a bunch of stuff like modules 
+- modules are a library of collections 
+
+The DOM (Document Object Model) is essentially the API one will use to manipilate an HTML (or XML) 
+
+JS can do a lot of "blocking" stuff in the browser because it is handling that stuff to async web api
+
+calbacks, promises, async/await => asynchronous 
+- needed in order to handle API's
+
+setTimeOut is asynchronous -> not part of JS -> part of the DOM 
+
+What is callback? It is the function that has been passed as an arguement (not really "a thing" in JS justa convetion) 
+
+What is a promise? A promise is an object that represents the eventual completion or failure of an async operation and its value. 
+* A promise is an object that represents the eventual completiion or failure of an async operation and its value, an object that may have a value in the future
+What returns a promise? A fetch returns a promise 
+
+A promise can have three possible states 
+1. fufilled
+2. pending
+3. rejected 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
